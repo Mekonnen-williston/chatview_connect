@@ -447,7 +447,7 @@ final class ChatViewFireStoreDatabase implements DatabaseService {
         }
       }
 
-      if (currentUser == null || otherUsers.isEmpty) return null;
+      if (currentUser == null) return null;
 
       return ChatRoomMetadata(
         chatRoomType: chatRoom.chatRoomType,
